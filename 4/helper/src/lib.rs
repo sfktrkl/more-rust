@@ -15,6 +15,13 @@ pub mod helper {
         thread_rng().fill(&mut array[..]);
         return array;
     }
+    pub fn create_array_range() -> [i32; ARRAY_SIZE] {
+        let mut array = [0i32; ARRAY_SIZE];
+        for x in &mut array {
+            *x = thread_rng().gen_range(-1000..1000);
+        }
+        return array;
+    }
 
     pub fn swap<T: Copy>(array: &mut [T], i: usize, j: usize) {
         let temp: T;
