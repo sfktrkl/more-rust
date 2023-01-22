@@ -1,0 +1,14 @@
+[package]
+name = "comparison"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+helper = { path = "../helper" }
+bubble_sort = { path = "../bubble_sort" }
+selection_sort = { path = "../selection_sort" }
+insertion_sort = { path = "../insertion_sort" }
+merge_sort = { path = "../merge_sort" }
+quick_sort = { path = "../quick_sort" }
